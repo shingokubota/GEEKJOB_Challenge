@@ -1,0 +1,3 @@
+OS:Windows10
+CPU:Intel Core i7-6700HQ
+ƒƒ‚ƒŠ:8.00GB
