@@ -29,17 +29,13 @@ public class back_value1 extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-    void suuji(int num,PrintWriter pw){
-         if(num %2==0){
-        pw.print(num+"は、偶数です。");//偶数処理
-    }else{
-        pw.print(num+"は、奇数です。");//奇数処理
-    }
-    }
+    void suuji(PrintWriter pw){
+        pw.print("");
+        }
+    
     
     boolean checkPlus(int num){
-        if(num>=0){return true;}//正の場合、ture
-        else{return false;}//負の場合、false
+            return true;
         }
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -47,8 +43,7 @@ public class back_value1 extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
                    
-         suuji(4,out);
-             
+                     
          if(checkPlus(4)){
                 out.print("この処理は正しく実行できました");
             }else{
